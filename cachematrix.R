@@ -1,12 +1,12 @@
-setwd("C:\\Users\\okushi\\Documents\\Coursera\\Week3")
+#########################################################
+############### Caching the Inverse of a Matrix ###########
+#########################################################
+
+
+
 
 
 #########################################################
-############### Assignment 3: Lexical Scoping ###########
-#########################################################
-
-#########################################################
-#Question 1:
 #makeCacheMatrix: This function creates a special "matrix" 
 #object that can cache its inverse
 #########################################################
@@ -27,7 +27,6 @@ makeCacheMatrix<- function(x=matrix()){
 }
 
 #########################################################
-#Question 2:
 #cacheSolve: This function computes the inverse of the 
 #special "matrix" returned by makeCacheMatrix above. 
 #If the inverse has already been calculated
@@ -37,7 +36,7 @@ makeCacheMatrix<- function(x=matrix()){
 #########################################################
 
 cacheSolve<-function(x, ...) {
-        ## Inverse of 'x' matrix
+        ## Return a matrix that is the inverse of 'x'
         inv<- x$getInverse()
         if(!is.null(inv)) {
                 message("getting cached data")
